@@ -1,3 +1,6 @@
+# QR codes (local only)
+qr-codes/
+
 # OS
 .DS_Store
 Thumbs.db
