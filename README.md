@@ -5,13 +5,14 @@
 ![Security](https://img.shields.io/badge/Domain-Cybersecurity-red?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-Kali%20Linux-blue?style=for-the-badge)
 ![Tools](https://img.shields.io/badge/Tools-Nmap%20|%20Metasploit%20|%20Wireshark%20|%20Snort-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Lab%20Completed-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT%20%7C%20CC--BY--NC%204.0-purple?style=for-the-badge)
 
 ---
 
 ## 📋 Overview
 
-This repository contains **6 structured lab experiments** that demonstrate both offensive and defensive cybersecurity techniques. Each experiment includes step-by-step procedures, screenshots, and analysis — making it a complete reference for learning practical security skills.
+This repository documents **6 structured academic laboratory experiments** demonstrating both offensive ethical penetration testing and defensive cybersecurity techniques. Each experiment includes step-by-step procedures, execution outputs, and detailed analytical walkthroughs.
 
 ### 🏗️ Lab Environment
 
@@ -64,7 +65,7 @@ This repository contains **6 structured lab experiments** that demonstrate both 
 # Clone this repository
 git clone https://github.com/Jaskaranbandral-07/Offensive-Defensive-Security-Lab.git
 
-# Navigate into the project
+# Navigate into the lab directory
 cd Offensive-Defensive-Security-Lab
 ```
 
@@ -98,6 +99,20 @@ Offensive-Defensive-Security-Lab/
     └── images/
 ```
 
+## 📱 Quick Access (QR Codes)
+
+All experiments include styled QR codes for rapid mobile access and submission. A single-page, high-resolution A4 print sheet is available in the [`qr-codes/`](qr-codes/) directory:
+- [📄 Download Printable A4 Sheet (PDF)](qr-codes/ALL-QR-CODES-PRINTABLE.pdf)
+- [🖼️ View Printable A4 Sheet (PNG)](qr-codes/ALL-QR-CODES-PRINTABLE.png)
+
+---
+
+## 🎓 Academic Notice & Citation
+
+> **Academic Coursework:** This repository serves as a coursework record and educational reference for the Offensive & Defensive Cybersecurity Laboratory.
+>
+> **For Students & Researchers:** You are welcome to reference, study, and reproduce these experiments in an isolated virtual lab environment. Please uphold academic integrity and adhere to your institution's honor code by understanding and performing the experiments independently rather than copying verbatim.
+
 ---
 
 ## ⚠️ Disclaimer
@@ -108,9 +123,12 @@ Offensive-Defensive-Security-Lab/
 
 ---
 
-## 📜 License
+## 📜 Licensing & Usage
 
-This project is open-source and available under the [MIT License](LICENSE).
+This repository uses dual licensing to distinguish practical scripts/configurations from educational documentation:
+
+- **Source Code & Scripts:** Licensed under the [MIT License](LICENSE). You are granted full permission to run, test, modify, and learn from the code implementations.
+- **Lab Documentation & Materials (`README.md`, writeups, screenshots, scan reports):** Licensed under the [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) License. You may freely read, reference, and share the material for non-commercial educational purposes with appropriate attribution.
 
 ---
 
