@@ -79,6 +79,10 @@ cat /proc/sys/net/ipv4/ip_forward
 # Output: 1
 ```
 
+> 📸 *Enable IP Forwarding*
+
+![IP Forwarding Configuration](images/step2-enable-ip-forwarding.png)
+
 > ⚠️ **Without IP forwarding, the attack becomes a Denial of Service** — packets arriving at the attacker are dropped instead of forwarded, severing the victim's connectivity.
 
 ---
@@ -97,9 +101,9 @@ sudo arpspoof -i eth0 -t 192.168.56.1 192.168.56.100
 
 Each command continuously transmits forged ARP Replies at ~1-second intervals. The target now believes the attacker's MAC is the gateway, and the gateway believes the attacker's MAC is the target.
 
-> 📸 *ARP Spoofing in Progress*
+> 📸 *Wireshark ARP Traffic & Spoofing Capture*
 
-![ARP Spoofing](images/step2-arp-spoofing.png)
+![Wireshark ARP Capture](images/step3-wireshark-arp-capture.png)
 
 ---
 
@@ -119,13 +123,13 @@ sudo wireshark &
 arp
 ```
 
-3. Verify ARP anomalies — look for:
+3. Verify ARP anomalies and check IP neighbor table:
    - Duplicate IP-to-MAC mappings
    - Gratuitous ARP Replies from the attacker's MAC for both the target and gateway IPs
 
-> 📸 *Wireshark ARP Capture*
+> 📸 *IP Neighbor Table & ARP Cache Verification*
 
-![Wireshark ARP Capture](images/step3-wireshark-arp.png)
+![IP Neighbor Table](images/step4-ip-neighbor-table.png)
 
 ---
 
@@ -148,9 +152,9 @@ Observe:
 - **Plaintext credentials** in POST body data (if HTTP login forms are used)
 - **Cookie headers** attached to authenticated requests
 
-> 📸 *Filtered Victim Traffic*
+> 📸 *Wireshark Traffic Analysis*
 
-![Victim Traffic Filter](images/step4-victim-traffic.png)
+![Wireshark Traffic Analysis](images/step5-wireshark-traffic-analysis.png)
 
 ---
 
@@ -174,11 +178,7 @@ Alternatively, use the browser's **Developer Tools** on the target:
 | `HttpOnly` | Not set | ❌ Accessible via JavaScript |
 | `SameSite` | Not set | ❌ Vulnerable to CSRF |
 
-> 📸 *Browser Session Cookie Inspection*
-
-![Session Cookie Inspection](images/step5-session-cookies.png)
-
-> 📸 *Detailed Browser Session Analysis*
+> 📸 *Browser Session Inspection & Cookie Attributes*
 
 ![Browser Session Inspection](images/step6-browser-session-inspection.png)
 

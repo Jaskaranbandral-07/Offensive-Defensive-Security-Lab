@@ -84,6 +84,10 @@ The default `config.json` configures:
 }
 ```
 
+> 📸 *GoPhish Installation & Setup*
+
+![GoPhish Installation](images/step1-gophish-installation.png)
+
 ---
 
 ### Step 2 — Launch GoPhish and Access the Dashboard
@@ -105,6 +109,10 @@ Open a browser and navigate to `https://localhost:3333`. Log in with:
 - **Password:** *(displayed in the terminal output on first run)*
 
 Change the default password immediately upon first login.
+
+> 📸 *GoPhish Admin Dashboard*
+
+![GoPhish Dashboard](images/step2-gophish-dashboard.png)
 
 ---
 
@@ -139,6 +147,14 @@ echo "Test email body" | mail -s "Test Subject" testuser@localhost
 ```
 
 Click **Send Test Email** to verify the configuration works before proceeding.
+
+> 📸 *Sending Profiles Configuration*
+
+![Sending Profiles](images/step3-sending-profiles.png)
+
+> 📸 *MailHog / SMTP Capture Interface*
+
+![MailHog Interface](images/step6-mailhog-interface.png)
 
 ---
 
@@ -185,6 +201,10 @@ Design the phishing email that targets will receive:
 
 > **💡 Note:** GoPhish variables like `{{.FirstName}}`, `{{.LastName}}`, `{{.Email}}`, and `{{.URL}}` are automatically populated for each recipient.
 
+> 📸 *Phishing Email Template Design*
+
+![Email Templates](images/step4-email-templates.png)
+
 ---
 
 ### Step 5 — Create a Landing Page
@@ -211,6 +231,10 @@ Build the credential harvesting page that targets see when they click the phishi
 
 After a user submits credentials on this page, they are automatically redirected to the training/awareness page specified in the redirect URL.
 
+> 📸 *Phishing Landing Page Portal*
+
+![Landing Pages](images/step5-landing-pages.png)
+
 ---
 
 ### Step 6 — Define the Target User Group
@@ -235,14 +259,15 @@ Alice,Brown,alice.brown@lab.internal,HR Specialist
 
 > **⚠️ Warning:** In this lab, only use test email accounts that you control. Never send phishing simulations to real users without explicit organizational authorization and legal review.
 
+> 📸 *Target Users and Groups Configuration*
+
+![Users and Groups](images/step7-users-and-groups.png)
+
 ---
 
 ### Step 7 — Launch the Phishing Campaign
 
 Orchestrate all components into a live campaign:
-
-1. Navigate to **Campaigns** → **New Campaign**
-2. Configure:
 
 | Field              | Value                          |
 |:-------------------|:-------------------------------|
@@ -277,6 +302,10 @@ Return to the campaign dashboard to monitor live metrics:
 - **Emails Reported** — Recipients who reported the phishing email
 
 GoPhish provides a timeline view showing exactly when each action occurred, enabling analysis of user response patterns.
+
+> 📸 *Phishing Simulation Campaign Results & Analytics*
+
+![Campaign Results](images/step8-phishing-campaign-results.png)
 
 ```bash
 # GoPhish also provides a REST API for programmatic monitoring
